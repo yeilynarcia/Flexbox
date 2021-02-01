@@ -1,0 +1,426 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 350px;
+  background-color: #D6EAF8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("pexels-photo-1005644.webp");
+  background-size: 1600px 900px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header #encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #encabezado #titulo {
+  font-size: 4em;
+  color: white;
+  text-shadow: 1px 1px 8px black;
+}
+
+#menu {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  border: solid 2px white;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#menu ul {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+#menu ul a {
+  text-decoration: none;
+  color: white;
+}
+
+#menu ul a:hover {
+  color: black;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.principal {
+  border: black 3px solid;
+  margin: 20px 25px 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 97%;
+  height: 750px;
+  background-image: url("pexels-photo-2824173.jpg");
+}
+
+.principal .bienvenidos {
+  color: white;
+  padding: 31px 20px;
+  font-size: 2em;
+  background-color: black;
+}
+
+.principal .ariculo-bienvenida {
+  width: 50vw;
+  height: 45vw;
+  padding: 20px 20px;
+  font-size: 1.5em;
+  text-align: justify;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#diarios {
+  width: 97%;
+  margin: 0 25px;
+  background-image: url("pexels-photo-2824173.jpg");
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: black solid 3px;
+  padding-bottom: 10px;
+}
+
+#diarios .titulos {
+  padding: 20px;
+  border: white 2px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+#diarios .container-diarios {
+  margin: 10px;
+  width: 30%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden scroll;
+}
+
+#diarios .container-diarios .titulos-diarios {
+  color: white;
+  text-shadow: 1px 3px 9px black;
+  font-size: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  border: white solid 2px;
+  border-radius: 8px;
+}
+
+#diarios .container-diarios .arti-diarios {
+  padding: 15px;
+  text-align: justify;
+  font-size: 1.2em;
+  border: white 2px solid;
+}
+
+#articulos {
+  width: 97%;
+  margin: 0px 25px;
+  border: black 1px solid;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: black solid 3px;
+}
+
+#articulos .titulos {
+  padding: 20px;
+  border: white 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+#articulos #container-article {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 32%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#articulos .titulo-article {
+  font-size: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  border: black solid 3px;
+  border-radius: 10px;
+}
+
+#articulos .article {
+  padding: 15px;
+  text-align: justify;
+  font-size: 1.2em;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#articulos .imagen-article {
+  height: 440px;
+  width: 100%;
+}
+
+#descubrimientos {
+  width: 97%;
+  margin: 0px 25px 0px 25px;
+  border: black 1px solid;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px black solid;
+}
+
+#descubrimientos .titulos {
+  padding: 20px;
+  border: white 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+#descubrimientos #container-descubri {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 48%;
+}
+
+#descubrimientos .titulo-descubri {
+  font-size: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  border: #80342c 3px solid;
+  border-radius: 5px;
+  background-color: rgba(128, 52, 44, 0.6);
+  color: white;
+}
+
+#descubrimientos .descubri {
+  padding: 15px;
+  text-align: justify;
+  font-size: 1.2em;
+  border: #80342c 3px solid;
+  border-radius: 5px;
+}
+
+#descubrimientos .imagen-arti {
+  height: 430px;
+  width: 100%;
+}
+
+#contactanos {
+  width: 97%;
+  margin: 0px 25px 0px 25px;
+  border: black 3px solid;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contactanos .titulos {
+  padding: 20px;
+  border: white 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  width: 50%;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+#contactanos .contacto {
+  width: 50%;
+  margin: 10px 25px;
+  padding: 25px;
+  border: black 3px solid;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#contactanos .contacto input {
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#contactanos .contacto label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#contactanos .button {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#contactanos .button .boton {
+  width: 20%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  margin-right: 30px;
+  font-size: 0.9em;
+  background-color: black;
+  color: white;
+}
+
+#contactanos .button .boton:hover {
+  color: black;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+footer {
+  margin: 5px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
